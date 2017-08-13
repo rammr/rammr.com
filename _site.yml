@@ -1,9 +1,42 @@
 name: "my-website"
-output_dir: "."
+output_dir: 'docs' 
 navbar:
   title: "My Website"
   left:
     - text: "Home"
+      icon: fa-home  fa-2x
       href: index.html
     - text: "About"
+      icon: fa-info-circle fa-2x
       href: about.html
+    - text: "Publications"
+      icon: fa-book  fa-2x
+      href: pubs.html
+    - text: "Group"
+      icon: fa-group  fa-2x
+      href: group.html
+    - text: "News"
+      icon: fa-newspaper-o fa-2x
+      href: news.html
+    - text: "Presentations"
+      icon: fa-slideshare fa-2x
+      # href: https://speakerdeck.com/alexsingleton
+    - text: "Videos"
+      icon: fa-video-camera fa-2x
+      # href: https://vimeo.com/album/4097174
+  right:
+    - icon: fa-github fa-2x
+      # href: https://github.com/alexsingleton
+    - icon: fa-twitter fa-2x
+      # href: https://twitter.com/alexsingleton
+    - icon: fa-linkedin fa-2x
+      # href: https://uk.linkedin.com/in/alexdsingleton
+output:
+  html_document:
+    # css: style.css
+    # theme: "default", "cerulean", "journal", "flatly", "readable", "spacelab", "united", "cosmo", "lumen", "paper", "sandstone", "simplex", "yeti"
+    theme: yeti
+    highlight: haddock
+    include:
+        # after_body: footer.html
+exclude: ["*.csv", "*.bib","*.sh","*.R"] 

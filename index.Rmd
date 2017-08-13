@@ -2,4 +2,9 @@
 title: "My Website"
 ---
 
-New text.
+Research Interests
+==================
+
+1. Area 1
+2. Area 2
+3. Area 3
